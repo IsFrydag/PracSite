@@ -1,0 +1,348 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+
+    height: 200px;
+
+    border: rgb(122, 90, 47) 15px double;
+    border-radius: 120px;
+
+    background-color: rgba(221, 164, 90, 0.336);
+
+}
+
+.heading1{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100px;
+
+    text-align: center;
+
+    padding-top: 50px;
+
+    animation: colorChange 5s infinite;
+
+}
+
+/* First info block */
+
+.wol{
+
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+
+    transform: translate(3%);
+
+}
+
+.wolTxt{
+
+    position: absolute;
+    Right: 0%;
+
+    text-align: center;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+    line-height: 55px;
+
+    padding-top: 40px;
+    padding-right: 100px;
+    width: 50%;
+
+}
+
+.wolTxtHid{
+
+    position: absolute;
+    left: -100%; /* Hidden off-screen to the left initially */
+    opacity: 0;
+    transition: left 0.3s ease, opacity 0.3s ease;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+    line-height: 48px;
+
+    padding-top: 8px;
+    width: 50%;
+
+}
+
+.WolimageContainer{
+    
+    transition: transform 0.3s ease;
+    text-align: center;
+
+}
+
+.inf1{
+    
+    margin-top: 1%;
+
+    justify-content: space-between;
+    display: flex;
+    
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+
+    background-color: #94e475; 
+    border-top: #42c90c solid 5pt;
+    border-bottom: #42c90c solid 5pt;
+    
+}
+
+.inf1:hover{
+
+    background-color: #f5ddb0; 
+    border-top: #f0b23f solid 5pt;
+    border-bottom: #f0b23f solid 5pt;
+
+}
+
+.inf1:hover .WolimageContainer{
+
+    transform: translateX(1155px);
+
+}
+
+.inf1:hover .wolTxtHid{
+
+    left: 0; /* Moves text to visible position */
+    text-align: center;
+
+    opacity: 1;
+    display: flex;
+    
+    padding-left: 80px;
+    padding-top: 20px;
+
+}
+
+.inf1:hover .wolTxt{
+
+    position: absolute;
+    Right: -100%; /* Hidden off-screen to the left initially */
+    opacity: 0;
+    transition: right 0.3s ease, opacity 0.3s ease;
+
+}
+
+/* End of First info block */
+
+/* Start of Second info block */
+
+.groot{
+
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+
+    padding-left: 20px;
+
+}
+
+.grootTxtHid{
+
+    position: absolute;
+    left: 0;/* Hidden off-screen to the left initially */
+    opacity: 0%;
+    transition: 0.3s ease, opacity 0.3s ease;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 21pt;
+    line-height: 50px;
+
+    padding-top: 8px;
+    width: 40%;
+
+}
+
+.GrootimageContainer{
+    
+    text-align: center;
+
+    transition: 0.3s ease, transform 0.3s ease;
+
+}
+
+.inf2{
+
+    height: 480px;
+    
+    margin-top: 1%;
+    width: 40%;
+
+    justify-content: space-between;
+    display: flex;
+    
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+
+    background-color: #94e475; 
+    border-top: #42c90c solid 5pt;
+    border-bottom: #42c90c solid 5pt;
+    border-radius: 40px;
+    
+}
+
+.inf2:hover{
+
+    background-color: #f5ddb0; 
+    border-top: #f0b23f solid 5pt;
+    border-bottom: #f0b23f solid 5pt;
+
+}
+
+.inf2:hover .grootTxtHid{
+
+    left: 0; /* Moves text to visible position */
+    text-align: center;
+
+    opacity: 1;
+    display: flex;
+    
+    padding-top: 20px;
+
+}
+
+.inf2:hover .GrootimageContainer{
+    
+    transform: translatex(-750px);
+
+}
+
+/* End of Second info block */
+
+@keyframes colorChange{
+
+    0% {
+        color: rgb(0, 100, 0);      /* Dark green */
+    }
+    2.5% {
+        color: rgb(0, 106, 0);      /* Slightly lighter dark green */
+    }
+    5% {
+        color: rgb(0, 113, 0);      /* Lighter dark green */
+    }
+    7.5% {
+        color: rgb(0, 119, 0);      /* More light */
+    }
+    10% {
+        color: rgb(0, 126, 0);      /* Continuing lighter */
+    }
+    12.5% {
+        color: rgb(0, 132, 0);      /* Green shift */
+    }
+    15% {
+        color: rgb(0, 139, 0);      /* Medium dark green */
+    }
+    17.5% {
+        color: rgb(0, 145, 0);      /* More medium green */
+    }
+    20% {
+        color: rgb(0, 151, 0);      /* Medium green */
+    }
+    22.5% {
+        color: rgb(0, 158, 0);      /* Toward lighter green */
+    }
+    25% {
+        color: rgb(0, 164, 0);      /* Lighter medium green */
+    }
+    27.5% {
+        color: rgb(0, 170, 0);      /* More light green */
+    }
+    30% {
+        color: rgb(0, 177, 0);      /* Light green start */
+    }
+    32.5% {
+        color: rgb(0, 183, 0);      /* Lighter green */
+    }
+    35% {
+        color: rgb(0, 189, 0);      /* More light green */
+    }
+    37.5% {
+        color: rgb(0, 196, 0);      /* Stronger light green */
+    }
+    40% {
+        color: rgb(0, 202, 0);      /* Bright green */
+    }
+    42.5% {
+        color: rgb(0, 208, 0);      /* Very bright green */
+    }
+    45% {
+        color: rgb(0, 215, 0);      /* Approaching lightest */
+    }
+    47.5% {
+        color: rgb(0, 221, 0);      /* Near lightest green */
+    }
+    50% {
+        color: rgb(0, 228, 0);      /* Lightest green */
+    }
+    52.5% {
+        color: rgb(0, 221, 0);      /* Start back to dark - mirror point */
+    }
+    55% {
+        color: rgb(0, 236, 0);      /* Back toward medium */
+    }
+    57.5% {
+        color: rgb(0, 208, 0);      /* Lighter green reverse */
+    }
+    60% {
+        color: rgb(2, 226, 2);      /* Bright green reverse */
+    }
+    62.5% {
+        color: rgb(2, 206, 2);      /* Medium light reverse */
+    }
+    65% {
+        color: rgb(0, 189, 0);      /* Medium green reverse */
+    }
+    67.5% {
+        color: rgb(0, 183, 0);      /* More medium reverse */
+    }
+    70% {
+        color: rgb(0, 177, 0);      /* Light green reverse */
+    }
+    72.5% {
+        color: rgb(0, 170, 0);      /* Toward medium reverse */
+    }
+    75% {
+        color: rgb(0, 164, 0);      /* Medium green reverse */
+    }
+    77.5% {
+        color: rgb(0, 158, 0);      /* Darker green reverse */
+    }
+    80% {
+        color: rgb(0, 151, 0);      /* Medium dark reverse */
+    }
+    82.5% {
+        color: rgb(0, 145, 0);      /* More dark reverse */
+    }
+    85% {
+        color: rgb(0, 139, 0);      /* Darker green reverse */
+    }
+    87.5% {
+        color: rgb(0, 132, 0);      /* Dark green shift reverse */
+    }
+    90% {
+        color: rgb(0, 126, 0);      /* Darker still reverse */
+    }
+    92.5% {
+        color: rgb(0, 119, 0);      /* Near dark reverse */
+    }
+    95% {
+        color: rgb(0, 113, 0);      /* Very dark green reverse */
+    }
+    97.5% {
+        color: rgb(0, 106, 0);      /* Almost back to start */
+    }
+    100% {
+        color: rgb(0, 100, 0);      /* Back to dark green */
+    }
+    
+}

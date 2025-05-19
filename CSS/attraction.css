@@ -1,0 +1,375 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+
+}
+
+.sectionNav{
+
+    position: absolute;
+    top: 0;
+    Right: 0;
+
+    padding-right: 30px;
+
+}
+
+.nav ul {
+
+    list-style-type: none !important;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+.nav ul li{
+
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav ul li a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+
+.sectionHeader{
+
+    background-image: linear-gradient(rgba(4, 9, 30, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),  url(/Images/AttractionHimage.avif);
+    height: 100vh;
+    width: 100%;
+    background-position: center; 
+    background-size: cover;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center-circle{
+
+    width: 150px;
+    height: 150px;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    
+    border: #00e0e0 4pt solid;
+
+}
+
+.orbit{
+
+    position: relative;
+    width: 300px;
+    height: 300px;
+    animation: float 20s infinite linear;
+
+}
+
+.circle{
+
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+
+    z-index: 2;
+
+}
+
+.circle::before{
+
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background: #00e0e0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    z-index: -1;
+
+}
+
+@keyframes float{
+
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+
+}
+
+@keyframes spin{
+
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+
+}
+
+.GIF{
+
+    border-radius: 50px;
+
+}
+
+.circle-1::after{
+
+    color: rgb(255, 255, 255);
+    background: #00e0e0;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.circle-1:hover::after{
+
+    width: 120%;
+
+}
+
+.circle-1:hover .cyTxt{
+
+    opacity: 100%;
+
+}
+
+.circle-1 .cyTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+    opacity: 0%;
+    transition: 0.5s;
+
+    color: white;
+
+}
+
+.circle-2::after{
+
+    color: rgb(255, 255, 255);
+    background: #00e0e0;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.circle-2:hover::after{
+
+    width: 100%;
+
+}
+
+.circle-2:hover .hikTxt{
+
+    opacity: 100%;
+
+}
+
+.circle-2 .hikTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+    opacity: 0%;
+    transition: 0.5s;
+
+    color: white;
+
+}
+
+.circle-3::after{
+
+    color: rgb(255, 255, 255);
+    background: #00e0e0;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.circle-3:hover::after{
+
+    width: 100%;
+
+}
+
+.circle-3:hover .hotTxt{
+
+    opacity: 100%;
+
+}
+
+.circle-3 .hotTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+    opacity: 0%;
+    transition: 0.5s;
+
+    color: white;
+
+}
+
+.circle-4::after{
+
+    color: rgb(255, 255, 255);
+    background: #00e0e0;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.circle-4:hover::after{
+
+    width: 190%;
+
+}
+
+.circle-4:hover .monTxt{
+
+    opacity: 100%;
+
+}
+
+.circle-4 .monTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+    opacity: 0%;
+    transition: 0.5s;
+
+    color: white;
+
+}
+
+.circle-5::after{
+
+    color: rgb(255, 255, 255);
+    background: #00e0e0;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.circle-5:hover::after{
+
+    width: 190%;
+
+}
+
+.circle-5:hover .resTxt{
+
+    opacity: 100%;
+
+}
+
+.circle-5 .resTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+    opacity: 0%;
+    transition: 0.5s;
+
+    color: white;
+
+}

@@ -1,0 +1,589 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+
+    background-image: linear-gradient(rgba(4, 9, 30, 0.87), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),  url(/Images/Pretoria2.jpg);
+    min-height: 100vh;
+    min-width: 100%;
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+
+}
+
+.nav ul {
+
+    list-style-type: none !important;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+.nav ul li{
+
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav ul li a{
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.title-text{
+
+    text-align: center;
+
+    font-size: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.726);
+
+    padding-top: 190px;
+
+}
+
+
+.headingSig{
+
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color: #000000;
+
+}
+
+.vmon {
+
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+
+    transform: translate(50%);
+
+}
+
+.vmonTxt{
+
+    position: absolute;
+    left: -100%; /* Hidden off-screen to the left initially */
+    opacity: 0;
+    transition: left 0.3s ease, opacity 0.3s ease;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+    line-height: 48px;
+
+    padding-top: 8px;
+    width: 50%;
+
+}
+
+.imageContainer{
+    
+    transition: transform 0.3s ease;
+    text-align: center;
+
+}
+
+.unis{
+
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+
+    transform: translate(50%);
+
+}
+
+.unisTxt{
+
+    position: absolute;
+    Right: -100%;
+    opacity: 0;
+    transition: right 0.3s ease, opacity 0.3s ease;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+    line-height: 48px;
+
+    padding-top: 8px;
+    width: 50%;
+
+}
+
+.imageContainer2{
+    
+    transition: transform 0.3s ease;
+    text-align: center;
+
+}
+
+.jac{
+
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+
+    transform: translate(50%);
+
+}
+
+.jacTxt{
+
+    position: absolute;
+    Left: -100%;
+    opacity: 0;
+    transition: left 0.3s ease, opacity 0.3s ease;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+    line-height: 48px;
+
+    padding-top: 8px;
+    width: 50%;
+
+}
+
+.imageContainer3{
+    
+    transition: transform 0.3s ease;
+    text-align: center;
+
+}
+
+.unio{
+
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+
+    transform: translate(50%);
+
+}
+
+.unioTxt{
+
+    position: absolute;
+    Right: -100%;
+    opacity: 0;
+    transition: right 0.3s ease, opacity 0.3s ease;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+    line-height: 48px;
+
+    padding-top: 8px;
+    width: 50%;
+
+}
+
+.imageContainer4{
+    
+    transition: transform 0.3s ease;
+    text-align: center;
+
+}
+
+.inf1{
+    
+    margin-top: 1%;
+
+    justify-content: space-between;
+    display: flex;
+    
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    
+}
+
+.inf1:hover{
+
+    background-color: #fdd282; 
+    border-top: #ffbd41 solid 5pt;
+    border-bottom: #ffbd41 solid 5pt;
+
+}
+
+.inf1:hover .imageContainer{
+
+    transform: translateX(500px);
+
+}
+
+.inf1:hover .vmonTxt{
+
+    left: 0; /* Moves text to visible position */
+    text-align: center;
+
+    opacity: 1;
+    display: flex;
+    
+
+}
+
+.inf2{
+    
+    margin-top: 1%;
+
+    justify-content: space-between;
+    display: flex;
+    
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+
+}
+
+.inf2:hover{
+
+    background-color: rgba(255, 123, 0, 0.856);
+    border-top: rgb(180, 87, 0) solid 5pt;
+    border-bottom: rgb(180, 87, 0) solid 5pt;
+
+}
+
+.inf2:hover .imageContainer2{
+
+    transform: translateX(-450px);
+
+}
+
+.inf2:hover .unisTxt{
+
+    Right: 0; 
+    text-align: center;
+
+    opacity: 1;
+    display: flex;
+
+    padding-top: 70px;
+    line-height: 50px;
+
+}
+
+.inf3{
+    
+    margin-top: 1%;
+
+    justify-content: space-between;
+    display: flex;
+    
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+
+}
+
+.inf3:hover{
+
+    background-color: rgb(197, 127, 255);
+    border-top: rgb(143, 5, 255) solid 5pt;
+    border-bottom: rgb(143, 5, 255) solid 5pt;
+
+}
+
+.inf3:hover .imageContainer3{
+
+    transform: translateX(500px);
+
+}
+
+.inf3:hover .jacTxt{
+
+    Left: 0; 
+    text-align: center;
+
+    opacity: 1;
+    display: flex;
+
+    padding-top: 140px;
+    line-height: 50px;
+
+}
+
+.inf4{
+    
+    margin-top: 1%;
+
+    justify-content: space-between;
+    display: flex;
+    
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+
+}
+
+.inf4:hover{
+
+    background-color: rgb(153, 255, 150);
+    border-top: rgb(65, 255, 58) solid 5pt;
+    border-bottom: rgb(65, 255, 58) solid 5pt;
+
+}
+
+.inf4:hover .imageContainer4{
+
+    transform: translateX(-450px);
+
+}
+
+.inf4:hover .unioTxt{
+
+    Right: 0; 
+    text-align: center;
+
+    opacity: 1;
+    display: flex;
+
+    padding-top: 50px;
+    line-height: 50px;
+
+}
+
+.footer{
+
+    color: white;
+    text-align: center;
+
+    background-color: rgb(41, 41, 41);
+
+    padding: 40px;
+
+}
+
+.aboutHeading{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30pt;
+
+    padding-bottom: 20px;
+
+    margin-top: -15px;
+
+}
+
+.aboutInfo{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15pt;
+
+}
+
+.icon-container{
+    
+    
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5px 20px -5px -20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 200px;
+    padding-left: 200px;
+
+    bottom: 0;
+    
+    color: white;
+    background-color: rgb(41, 41, 41);
+
+    
+}
+
+.icon1:hover{
+
+    cursor: pointer;
+
+}
+
+.icon1::after{
+
+    color: black;
+    background: #ff0000;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.icon1:hover::after{
+
+    width: 100%;
+
+}
+
+.icon1:hover .instaTxt{
+
+    opacity: 100%;
+
+}
+
+.icon1 .instaTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0%;
+    transition: 0.5s;
+
+}
+
+.icon2:hover{
+
+    cursor: pointer;
+
+}
+
+.icon2::after{
+
+    color: black;
+    background: #ff0000;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.icon2:hover::after{
+
+    width: 100%;
+
+}
+
+.icon2:hover .faceTxt{
+
+    opacity: 100%;
+
+}
+
+.icon2 .faceTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0%;
+    transition: 0.5s;
+
+}
+
+.icon3:hover{
+
+    cursor: pointer;
+
+}
+
+.icon3::after{
+
+    color: black;
+    background: #ff0000;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.icon3:hover::after{
+
+    width: 100%;
+
+}
+
+.icon3:hover .linkTxt{
+
+    opacity: 100%;
+
+}
+
+.icon3 .linkTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0%;
+    transition: 0.5s;
+
+}
+
+.icon4::after{
+
+    color: black;
+    background: #ff0000;
+
+    content: '';
+
+    width: 0%;
+    height: 4px;
+    
+    display: block;
+    margin: auto;
+
+    transition: 0.5s;
+
+}
+
+.icon4:hover{
+
+    cursor: pointer;
+
+}
+
+.icon4:hover::after{
+
+    width: 100%;
+
+}
+
+.icon4:hover .tikTxt{
+
+    opacity: 100%;
+
+}
+
+.icon4 .tikTxt{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0%;
+    transition: 0.5s;
+
+}
